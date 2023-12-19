@@ -31,7 +31,7 @@ struct ContentView: View {
 
 struct Rain: View {
     var size: CGSize
-
+    
     @State var startAnimation: Bool = false
     @State var random: Int = 0
     
@@ -39,20 +39,51 @@ struct Rain: View {
         let randomHeight: CGFloat = .random(in: (size.height / 2)...size.height)
         
         VStack {
-            ForEach(0..<constant.count, id: \.self) { index in
-                let character = Array(constant)[getRandomIndex(index: index)]
+            
+        }
+        .mask(alignment: .top) {
+            Rectangle()
+                .fill()
+            LinearGradient(colors: [
+                .clear,
+                .black.opacity(0.1),
+                .black.opacity(0.2),
+                .black.opacity(0.3),
+                .black.opacity(0.4),
+                .black.opacity(0.5),
+                .black
+            ],
+                           startPoint: .top,
+                           endPoint: .bottom)
+            .frame(height: size.height / 2)
+            .offset(y: startAnimation ? size.height : -randomHeight)
+            
+        }
+        .onAppear {
+            withAnimation(.linear(duration: 2).delay(.random(in: 0...2)).repeatForever(autoreverses: false)) {
+                
             }
         }
     }
 }
 
-struct getRandomIndex(index: Int) -> Int {
+func getRandomIndex(index: Int) -> Int {
     let max = constant.count - 1
     
     if(index + random) > max {
-        if(index + random)
+        if(index + random) < 0 {
+            return index
+        }
+        return(index - random)
+    } else {
+        return(index + random)
+        
     }
 }
 
 let constant = "0900909900880900808090"
 
+//ForEach(0..<constant.count, id: \.self) { index in
+//    let character = Array(constant)[getRandomIndex(index: index)]
+//    Text(String(character))
+//}

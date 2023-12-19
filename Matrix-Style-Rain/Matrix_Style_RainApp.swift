@@ -13,7 +13,7 @@ import SwiftUI
 struct Matrix_Style_RainApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatrixStyleRain()
         }
     }
 }

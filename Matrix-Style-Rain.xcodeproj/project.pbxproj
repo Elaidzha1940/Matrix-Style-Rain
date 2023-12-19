@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		E467E0FA2B31A02A00740569 /* Matrix_Style_RainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467E0F92B31A02A00740569 /* Matrix_Style_RainApp.swift */; };
-		E467E0FC2B31A02A00740569 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467E0FB2B31A02A00740569 /* ContentView.swift */; };
 		E467E0FE2B31A02B00740569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467E0FD2B31A02B00740569 /* Assets.xcassets */; };
 		E467E1012B31A02B00740569 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E467E1002B31A02B00740569 /* Preview Assets.xcassets */; };
+		E467E1082B31BCD400740569 /* MatrixStyleRain.swift in Sources */ = {isa = PBXBuildFile; fileRef = E467E1072B31BCD400740569 /* MatrixStyleRain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E467E0F62B31A02A00740569 /* Matrix-Style-Rain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Matrix-Style-Rain.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E467E0F92B31A02A00740569 /* Matrix_Style_RainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix_Style_RainApp.swift; sourceTree = "<group>"; };
-		E467E0FB2B31A02A00740569 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E467E0FD2B31A02B00740569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E467E1002B31A02B00740569 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E467E1072B31BCD400740569 /* MatrixStyleRain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixStyleRain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				E467E0F92B31A02A00740569 /* Matrix_Style_RainApp.swift */,
-				E467E0FB2B31A02A00740569 /* ContentView.swift */,
+				E467E1072B31BCD400740569 /* MatrixStyleRain.swift */,
 				E467E0FD2B31A02B00740569 /* Assets.xcassets */,
 				E467E0FF2B31A02B00740569 /* Preview Content */,
 			);
@@ -137,7 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E467E0FC2B31A02A00740569 /* ContentView.swift in Sources */,
+				E467E1082B31BCD400740569 /* MatrixStyleRain.swift in Sources */,
 				E467E0FA2B31A02A00740569 /* Matrix_Style_RainApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
